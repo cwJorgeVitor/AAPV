@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <link rel="stylesheet" href="index.css">
+
+
+</head>
+
+<body>
+
+    <div class="btn_areas">
+        <div>
+            <img class="icon_areas" src="../../resources/geral/medico.svg">
+            <a href="../login_medico/index.html">Area Restrita</a>
+        </div>
+        <div>
+            <img class="icon_areas" src="../../resources/geral/paciente.svg">
+            <a href="#">Area Paciente</a>
+        </div>
+    </div>
+
+
+    <div class="header">
+        <div class="logo_text">
+            <img class="Decoration" id="left" src="../../resources/geral/imgCima.svg" alt="left">
+            <img class="logo" src="../../resources/geral/logo.png" alt="Logo">
+            <div class="text">
+                <h2>UBS-FÁCIL</h2>
+                <p>Ao alcance de todos!</p>
+            </div>
+
+           
+            <img class="Decoration" id="right" src="../../resources/geral/imgCima.svg" alt="right">
+        </div>
+        <div class="nav_bar">
+            <nav>
+                <div class="nav-content">
+                    <ul class="nav-links">
+                        <li><a href="../duvidas/index.html">Sobre</a></li>
+                      <li><a href="../CadPaciente/index.html">Cadastro</a></li>
+                      <li><a href="../login_paciente/index.html">Agendamento</a></li>
+                      <li><a href="../UBS/index.html">Unidades Básicas</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="body">
+        <div class="container">
+            <div class="forms">
+                <div class="form login">
+                    <span class="title">Login Paciente</span>
+
+                    <form action="#">
+                        <div class="input-field">
+                            <input type="text" id="user_cpf" maxlength="11" placeholder="Insira Seu CPF" required>
+                            <i class='bx bx-id-card'></i>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" id="password" class="password" placeholder="Insira Sua Senha" required>
+                            <i class="uil uil-lock icon"></i>
+                            <i class="uil uil-eye-slash showHidePw"></i>
+                        </div>
+
+                        <div class="checkbox-text">
+                            <div class="checkbox-content">
+                                <input type="checkbox" id="logCheck">
+                                <label for="logCheck" class="text">Lembrar me</label>
+                            </div>
+
+                            <a href="#" id="esqueceu_senha" class="text">Esqueceu Senha?</a>
+                        </div>
+
+                        <div class="input-field button">
+                            <input type="button" value="Logar" onclick="logar()">
+                        </div>
+                    </form>
+
+                    <div class="login-signup">
+                        <span class="text">Não Tem Cadastro?
+                            <a href="../CadPaciente/index.html" class="text signup-link">Cadastre-se agora</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+    <div id="modal_forgotPassword" class="modal_container">
+        <div class="modal">
+            <div style="display:flex; justify-content: space-around;">
+                <h3>Esqueci a Senha</h3>
+                <i id="close" class='bx bx-x'></i>
+            </div>
+
+            <form action="#">
+                <div class="field">
+                    <input type="text" maxlength="11" required>
+                    <label>CPF.</label>
+                </div>
+                <div class="field">
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="field">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+
+
+
+
+    <script src="index.js"></script>
+    <script src="fakelogin.js"></script>
+
+</body>
+
+</html>
